@@ -1,0 +1,25 @@
+.article-detail{
+  width: ~"calc(40% - 10px)";
+  float: right;
+  transform: translateX(-10px);
+
+  &.hide {
+    transform: translateX(101%)
+  }
+  .title-container {
+    overflow: hidden;
+    .title {
+      color: @titleText;
+      font-size: 20px;
+      margin-bottom: 5px;
+      float: left;
+    }
+    .btn-close {
+      color: @titleText;
+      font-size: 20px;
+      float: right;
+      cursor: pointer;
+    }
+  }
+  transition: .5s linear all;
+}
